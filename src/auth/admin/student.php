@@ -669,8 +669,7 @@ if (!$student_result) {
     // แก้ไขนักเรียน
     $('.editStudentForm').on('submit', function(e) { 
         e.preventDefault();
-        const studentId = form.data('id');
-        const formData = new FormData(this); // Create FormData object
+        const formData = new FormData(this);
         
         $.ajax({
             url: 'backend/bn_edit_student.php',
